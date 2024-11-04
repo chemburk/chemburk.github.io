@@ -2363,10 +2363,44 @@ input, select, textarea {
 	}
 
 		ul.pub-list li {
-			display: block;
+			display: flex;
+			flex-wrap: wrap;
 			float: left;
 			padding: 1.5em 0;
 			width: 100%;
+		}
+
+		ul.pub-list li span {
+			display: flex;
+			float: left;
+			width: 40%;
+			height: 100%;
+			flex-direction: column;
+			max-width: 250px;
+		}
+
+		ul.pub-list li span.paper-links {
+			margin-left: min(40%, 250px);
+			text-align: left;
+			margin-top: -8.5vh;
+		}
+
+		@media (max-width: 768px) {
+			ul.pub-list li span.paper-links {
+				margin-left: 0px;
+				text-align: left;
+				margin-top: -6.5vh;
+			}
+		}
+
+		ul.pub-list li span img {
+			width: 100%;
+			padding-right: 1em;
+			padding-bottom: 1em;
+		}
+
+		ul.pub-list li span p {
+			margin: 0;
 		}
 
 		ul.pub-list li h3 {
@@ -2800,7 +2834,7 @@ input, select, textarea {
 		}
 
 		.main .container {
-			padding: 5em 2.5em 8em 2.5em ;
+			padding: 3em 2.5em 1em 2.5em ;
 			/* background: rgba(255, 255, 255, 0.95); */
 			background: #61686b;
 			opacity: 0.95;
@@ -2923,6 +2957,10 @@ input, select, textarea {
 			}
 
 /* Footer */
+	
+	#footer a img {
+		opacity: 0.9;
+	}
 
 	#footer {
 		/* min-height: 100vh; */
