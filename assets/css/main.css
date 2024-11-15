@@ -2854,6 +2854,7 @@ input, select, textarea {
 				margin-right: 1px;
 				vertical-align: middle;
 				width: calc(100% - 10px);
+				text-align: left;
 			}
 
 		.main .goto-next {
