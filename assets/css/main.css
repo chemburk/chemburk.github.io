@@ -3049,6 +3049,14 @@ input, select, textarea {
 				padding: 3em 3em 8em 3em ;
 			}
 
+			.main .goto-next {
+				display: none;
+			}
+
+			#header .container {
+				display: none;
+			}
+
 				.main .container:before {
 					display: none;
 				}
