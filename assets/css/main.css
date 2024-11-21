@@ -2382,7 +2382,15 @@ input, select, textarea {
 		ul.pub-list li span.paper-links {
 			margin-left: min(40%, 250px);
 			text-align: left;
-			margin-top: -8.5vh;
+			margin-top: -2.5vh;
+		}
+		
+		@media (max-width: 1850px) {
+			ul.pub-list li span.paper-links {
+				margin-left: min(40%, 250px);
+				text-align: left;
+				margin-top: -5.5vh;
+			}
 		}
 
 		@media (max-width: 768px) {
